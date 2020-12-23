@@ -15,7 +15,7 @@ class App < Sinatra::Base
     number = params[:number].to_i
     i = 0
     loop do 
-      out += phrase
+      out += params[:phrase]
       i+=1 
       if(i>=number)
         break
