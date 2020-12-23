@@ -23,7 +23,11 @@ class App < Sinatra::Base
   end 
   
   get '/:operation/:number1/:number2' do 
-    operation = param[:operation]
-    
+    operation = params[:operation]
+    num1 = params[:number1].to_i
+    num2 = params[:number2].to_i
+    if(operation == "add")
+      return (num1+num2).to_2
+    elsi
   end 
 end
